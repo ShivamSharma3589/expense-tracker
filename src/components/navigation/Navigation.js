@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
+import { HomeTwoTone, PlusCircleTwoTone } from '@ant-design/icons';
 
 const Navigation = () => {
   return (
