@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="content-wrapper">
       <Routes>
-
+      
       </Routes>
       <Navigation />
     </div>
