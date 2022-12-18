@@ -5,21 +5,23 @@ import { HomeTwoTone, PlusCircleTwoTone } from '@ant-design/icons';
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className='navigation-bar'>
       <ul>
         <li>
           <NavLink>
             <div>
               <HomeTwoTone />
             </div>
-            <div>
+            <div className='title'>
               Home
             </div>
           </NavLink>
         </li>
         <li>
           <NavLink>
-            Test
+            <div className='title'>
+              Test
+            </div>
           </NavLink>
         </li>
         <li>
@@ -31,12 +33,16 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink>
-            Test
+            <div className='title'>
+              Test
+            </div>
           </NavLink>
         </li>
         <li>
           <NavLink>
-            Test
+            <div className='title'>
+              Test
+            </div>
           </NavLink>
         </li>
       </ul>
