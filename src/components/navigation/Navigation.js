@@ -8,7 +8,7 @@ const Navigation = () => {
     <nav className='navigation-bar'>
       <ul>
         <li>
-          <NavLink>
+          <NavLink to='/'>
             <div>
               <HomeTwoTone />
             </div>
@@ -25,7 +25,7 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="add">
             <div>
               <PlusCircleTwoTone />
             </div>
@@ -39,7 +39,7 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="start">
             <div className='title'>
               Test
             </div>
