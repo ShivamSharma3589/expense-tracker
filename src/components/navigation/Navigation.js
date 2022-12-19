@@ -1,16 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
-import { HomeTwoTone, PlusCircleTwoTone } from '@ant-design/icons';
+import { 
+  HomeFilled, 
+  PlusCircleFilled,
+  FileUnknownFilled,
+  AndroidFilled,
+} from '@ant-design/icons';
 
 const Navigation = () => {
   return (
     <nav className='navigation-bar'>
       <ul>
         <li>
-          <NavLink to='/'>
-            <div>
-              <HomeTwoTone />
+          <NavLink to='/' className="nav-item">
+            <div className='icon-area'>
+              <HomeFilled className='nav-icon' />
             </div>
             <div className='title'>
               Home
@@ -18,30 +23,39 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/" className="nav-item">
+            <div className='icon-area'>
+              <FileUnknownFilled className='nav-icon' />
+            </div>
             <div className='title'>
               Test
             </div>
           </NavLink>
         </li>
         <li>
-          <NavLink to="add">
-            <div>
-              <PlusCircleTwoTone />
+          <NavLink to="add" className="nav-item-center">
+            <div className='center-icon-area'>
+              <PlusCircleFilled className='nav-center-icon' />
             </div>
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/" className="nav-item">
+            <div className='icon-area'>
+              <FileUnknownFilled className='nav-icon' />
+            </div>
             <div className='title'>
               Test
             </div>
           </NavLink>
         </li>
         <li>
-          <NavLink to="start">
+          <NavLink to="start" className="nav-item">
+            <div className='icon-area'>
+              <AndroidFilled className='nav-icon' />
+            </div>
             <div className='title'>
-              Test
+              User
             </div>
           </NavLink>
         </li>

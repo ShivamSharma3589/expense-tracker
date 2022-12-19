@@ -10,12 +10,16 @@ import {
   StartUpPage,
 } from './views';
 import { Suspense } from 'react';
-
+import 'antd/dist/reset.css'; 
 
 function App() {
   return (
     <div className="content-wrapper">
-      <Suspense>
+      <Suspense
+        fallback={ 
+          <div className="vh-100 w-100 d-flex justify-content-center align-items-center">Loading...</div>
+        }
+      >
         <Routes>
           <Route path='/' element={ <Home /> } />
           <Route path='/add' element={ <AddPage /> } />
